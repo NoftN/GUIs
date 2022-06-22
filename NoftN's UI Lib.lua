@@ -1,7 +1,6 @@
 local WindowTBL = {}
 
-function WindowTBL.CreateWindow(Title)
-    Title = Title or "NoftN's UI"
+function WindowTBL.CreateWindow()
     if game.CoreGui:FindFirstChild("NoftN's UI") then
         game.CoreGui:FindFirstChild("NoftN's UI"):Destroy()
     end
@@ -22,7 +21,7 @@ function WindowTBL.CreateWindow(Title)
 
     --Properties:
 
-    NoftNsUI.Name = Title
+    NoftNsUI.Name = "NoftN's UI"
     NoftNsUI.Parent = game.CoreGui
     NoftNsUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
